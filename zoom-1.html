@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ez-plus.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+
+           <style>
+                #gallery_01 img {
+                    border: 2px solid white;
+                    width: 96px;
+                }
+
+                #gallery_09 img {
+                    border: 2px solid white;
+                    width: 96px;
+                }
+
+                .active img {
+                    border: 2px solid #333 !important;
+                }
+
+            </style>
+</head>
+<body>
+
+    <div id="page">
+        <div id="col_wrap">
+                <div style="margin-left:10px;float:left; width:795px;">    
+                    
+                    
+                        <!-- <div class="zoom-wrapper">
+                            <div class="zoom-left">
+                                <img class="zoom-img" id="zoom_03f"
+                                    src="images/small/image3.jpg"
+                                    data-zoom-image="images/large/image3.jpg"
+                                    width="411"/>
+        
+                                <div id="gallery_01f" style="width:500px;float:left;">
+        
+                                    <a href="#" class="elevatezoom-gallery active" data-update=""
+                                    data-image="images/small/image1.jpg"
+                                    data-zoom-image="images/large/image1.jpg">
+                                        <img src="images/small/image1.jpg"
+                                            width="100"/></a>
+        
+                                    <a href="#" class="elevatezoom-gallery"
+                                    data-image="images/small/image2.jpg"
+                                    data-zoom-image="images/large/image2.jpg"
+                                        ><img src="images/small/image2.jpg"
+                                            width="100"/></a>
+        
+                                    <a href="tester" class="elevatezoom-gallery"
+                                    data-image="images/small/image3.jpg"
+                                    data-zoom-image="images/large/image3.jpg">
+                                        <img src="images/small/image3.jpg"
+                                            width="100"/>
+                                    </a>
+        
+                                    <a href="tester" class="elevatezoom-gallery"
+                                    data-image="images/small/image5.jpg"
+                                    data-zoom-image="images/large/image5.jpg"
+        
+                                    class="slide-content"
+                                        ><img src="images/small/image5.jpg" height="68"/></a>
+        
+                                </div>
+                            </div>
+                        
+                            <div style="clear:both;"></div>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#zoom_03f").ezPlus({
+                                        constrainType: "height",
+                                        constrainSize: 274,
+                                        zoomType: "lens",
+                                        containLensZoom: true,
+                                        gallery: 'gallery_01f',
+                                        cursor: 'pointer',
+                                        galleryActiveClass: "active"
+                                    });
+        
+                                    $("#zoom_03f").bind("click", function (e) {
+                                        var ez = $('#zoom_03f').data('ezPlus');
+                                        ez.closeAll();  
+                                        $.fancyboxPlus(ez.getGalleryList());
+        
+                                        return false;
+                                    });
+        
+                                });
+        
+                            </script>
+        
+                        </div>
+                        <hr class="style-two"> -->
+
+
+                        <div class="zoom-wrapper">
+                            <div class="zoom-left">
+                                <img class="zoom-img" id="zoom_03f"
+                                    src="images/small/image3.jpg"
+                                    data-zoom-image="images/large/image3.jpg"
+                                    width="411"/>
+        
+                                <div id="gallery_01f" style="width:500px;float:left;">
+        
+                                    <a href="#" class="elevatezoom-gallery active" data-update=""
+                                    data-image="images/small/image1.jpg"
+                                    data-zoom-image="images/large/image1.jpg">
+                                        <img src="images/small/image1.jpg"
+                                            width="100"/></a>
+        
+                                    <a href="#" class="elevatezoom-gallery"
+                                    data-image="images/small/image2.jpg"
+                                    data-zoom-image="images/large/image2.jpg"
+                                        ><img src="images/small/image2.jpg"
+                                            width="100"/></a>
+        
+                                    <a href="tester" class="elevatezoom-gallery"
+                                    data-image="images/small/image3.jpg"
+                                    data-zoom-image="images/large/image3.jpg">
+                                        <img src="images/small/image3.jpg"
+                                            width="100"/>
+                                    </a>
+        
+                                    <a href="tester" class="elevatezoom-gallery"
+                                    data-image="images/small/image5.jpg"
+                                    data-zoom-image="images/large/image5.jpg"
+        
+                                    class="slide-content"
+                                        ><img src="images/small/image5.jpg" height="68"/></a>
+        
+                                </div>
+                            </div>
+                        
+                            <div style="clear:both;"></div>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#zoom_03f").ezPlus({
+                                        zoomType: "lens",
+                                        lensShape: "round",
+                                        containLensZoom: true,
+                                        lensSize: 100,                                        
+                                        gallery: 'gallery_01f',
+                                        cursor: 'pointer',
+                                        galleryActiveClass: "active"
+                                    });
+        
+                                    $("#zoom_03f").bind("click", function (e) {
+                                        var ez = $('#zoom_03f').data('ezPlus');
+                                        ez.closeAll();  
+                                        $.fancyboxPlus(ez.getGalleryList());
+        
+                                        return false;
+                                    });
+        
+                                });
+        
+                            </script>
+        
+                        </div>
+                        <hr class="style-two">
+                    
+    
+                   
+                        <!-- <div class="zoom-wrapper">
+                            <div class="zoom-left">
+                                <img class="zoom-img" id="zoom_02"
+                                    src="images/small/image2.jpg"
+                                    data-zoom-image="images/large/image2.jpg"
+                                    width="411"/>
+                            </div>
+                        
+                            <div style="clear:both;"></div>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#zoom_02").ezPlus({tint: true, tintColour: '#F90', tintOpacity: 0.5});
+                                    $("#zoom_02a").ezPlus({
+                                        tint: true,
+                                        tintColour: 'red',
+                                        tintOpacity: 0.5,
+                                        zoomWindowPosition: 6
+                                    });
+                                    $("#zoom_02b").ezPlus({
+                                        tint: true,
+                                        tintColour: 'black',
+                                        tintOpacity: 0.5,
+                                        zoomWindowPosition: 6
+                                    });
+                                    $("#zoom_02c").ezPlus({
+                                        tint: true,
+                                        tintColour: 'green',
+                                        tintOpacity: 0.5,
+                                        zoomWindowPosition: 6
+                                    });
+                                });
+                            </script>
+                       
+                        </div>
+                        <hr class="style-two"> -->
+               
+
+
+                    <!-- <div class="zoom-wrapper">
+                        <div class="zoom-left">
+                            <img class="zoom-img" id="zoom_05"
+                                src="images/small/image2.jpg"
+                                data-zoom-image="images/large/image2.jpg"
+                                width="411"/>
+                        </div>
+                    
+                        <div style="clear:both;"></div>
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $("#zoom_05").ezPlus({
+                                    zoomType: "inner",
+                                    debug: true,
+                                    cursor: "crosshair",
+                                    zoomWindowFadeIn: 500,
+                                    zoomWindowFadeOut: 500
+                                });
+                            });
+                            $("#zoom_05").bind("click", function (e) {
+                                var ez = $('#zoom_05').data('ezPlus');
+                                $.fancyboxPlus(ez.getGalleryList());
+                                return false;
+                            });
+
+                        </script>
+                    
+                    </div>
+                    <hr class="style-two">   -->
+
+
+                    <!-- Lupa -->
+                    <!-- <div class="zoom-wrapper">
+                        <div class="zoom-left">
+                            <img id="zoom_07"
+                                src="images/small/image5.jpg"
+                                data-zoom-image="images/large/image5.jpg"
+                                width="411"/>
+                        </div>
+                    
+                        <div style="clear:both;"></div>
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $("#zoom_07").ezPlus({
+                                    zoomType: "lens",
+                                    lensShape: "round",
+                                    containLensZoom: true,
+                                    lensSize: 200
+                                });
+                            });
+                        </script>                   
+                    </div>
+                    <hr class="style-two">   -->
+
+     
+                 
+
+                </div>
+     
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
